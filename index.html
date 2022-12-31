@@ -8,11 +8,21 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <h1>単位の変換を行います。</h1>
         <div id="app">
+          <h2>距離</h2>
           <p><input type="text" v-model="km">km</p>
           <p><input type="text" v-model="m">m</p>
+          <p><input type="text" v-model="cm">cm</p>
+          <hr>
+          <h2>容量</h2>
           <p><input type="text" v-model="L">L</p>
           <p><input type="text" v-model="ml">ml</p>
+          <hr>
+          <h2>速さ</h2>
+          <p>時速<input type="text" v-model="KmPerHour">km</p>
+          <p>分速<input type="text" v-model="MPerMinute">m</p>
+          <p>秒速<input type="text" v-model="CmPerSec">cm</p>
         </div>
         <script src="https://unpkg.com/vue@3.1.5"></script>
         <script src="js/main.js"></script>
